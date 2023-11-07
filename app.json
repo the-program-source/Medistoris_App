@@ -15,7 +15,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.momo123kqksk.Medistoris"
     },
     "android": {
       "adaptiveIcon": {
