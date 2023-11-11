@@ -59,7 +59,7 @@ function LoginScreen( {navigation} ) {
                     paddingLeft: 22
                 }}>
                     <TextInput
-                        placeholder='Email'
+                        placeholder='Correu Electronic'
                         placeholderTextColor={COLORS.black}
                         keyboardType='email-address'
                         value={email}

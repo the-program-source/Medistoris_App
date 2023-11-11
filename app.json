@@ -22,10 +22,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "packages": [],
+      "package": "com.momo123kqksk.Medistoris"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0e1c114f-f107-4cf1-892c-91724ca1b7f6"
+      }
     }
   }
 }

@@ -71,7 +71,7 @@ const Dites = () => {
 
       <View style={{ flexDirection: 'row', paddingLeft: 20, marginTop: 20 }}>
         <Text style={{ color: 'white', fontSize: 14, marginLeft: 10 }}>
-          Dites
+          Cançons populars
         </Text>
       </View>
 
@@ -140,10 +140,11 @@ const Dites = () => {
                 setCurrentIndex(index);
               }}>
               <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                <Image
-                  source={{ uri: item.artwork }}
-                  style={{ width: 50, height: 50, borderRadius: 5 }}
-                />
+              <Image
+                source={item.artwork}
+                style={{ width: 50, height: 50, borderRadius: 5 }}
+              />
+
                 <View style={{ marginLeft: 10 }}>
                   <Text style={{ color: 'white' }}>{item.title}</Text>
                   <Text style={{ color: 'white', fontSize: 10 }}>
@@ -190,7 +191,7 @@ const Dites = () => {
         }}>
         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
           <Image
-            source={{ uri: songsList[currentIndex].artwork }}
+            source={songsList[currentIndex].artwork }
             style={{ width: 50, height: 50, borderRadius: 5 }}
           />
           <View style={{ marginLeft: 10 }}>

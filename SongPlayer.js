@@ -56,7 +56,7 @@ const SongPlayer = ({
         </TouchableOpacity>
 
         <Image
-          source={{ uri: songsList[currentSongIndex].artwork }}
+          source={ songsList[currentSongIndex].artwork}
           style={{
             width: '80%',
             height: '35%',

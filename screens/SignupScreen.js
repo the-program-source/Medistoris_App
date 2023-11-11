@@ -79,7 +79,7 @@ function SignupScreen( { navigation} ) {
                     paddingLeft: 22
                 }}>
                     <TextInput
-                        placeholder='Email'
+                        placeholder='Correu Electronic'
                         placeholderTextColor={COLORS.black}
                         keyboardType='email-address'
                         value={email}
@@ -151,6 +151,9 @@ function SignupScreen( { navigation} ) {
 
 
                 <Text>En fer clic a Registre, accepteu els nostres termes, privadesa i política i acord d'usuari</Text>
+                <TouchableOpacity onPress={() => navigation.navigate("Politica")}>
+                    <Text style={{color: blue}}>Política de privacitat</Text>
+                </TouchableOpacity>
             </View>
 
 

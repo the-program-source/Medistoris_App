@@ -1,12 +1,25 @@
 {
+    "cli": {
+      "version": ">= 0.60.0"
+    },
     "build": {
       "development-simulator": {
         "developmentClient": true,
-        "distribution": "internal",
+        "distribution": "internal"
+      },
+      "preview":{
         "ios": {
           "simulator": true
+        },
+        "android": {
+          "buildType": "apk"
         }
-      }
+      },
+      "production": {}
+    }, 
+    "submit": {
+      "production": {}
     }
+   
   }
   

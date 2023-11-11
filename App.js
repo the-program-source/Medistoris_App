@@ -7,12 +7,12 @@ import Histories from './screens/Histories';
 import Llegendes from './screens/Llegendes';
 import Dites from './screens/Dites';
 import CanconsPopulars from './screens/CanconsPopulars';
-import Trementinaria from './screens/Trementinaria';
 import Welcome from './screens/Welcome';
 import Politica from './screens/Politica';
 import SignupScreen from './screens/SignupScreen';
 import LoginScreen from './screens/LoginScreen';
 import ResetPassword from './screens/ResetPassword';
+import Songs from './screens/Songs';
 
 const Stack = createNativeStackNavigator();
 
@@ -75,7 +75,13 @@ function App() {
             title: "Cançons"
           }}
         />
-        <Stack.Screen name="Trementinaire" component={Trementinaria} />
+        <Stack.Screen 
+          name="Songs" 
+          component={Songs} 
+          options={{
+            title: "Totes les cançons"
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -11,10 +11,10 @@ const ResetPassword = ({ navigation }) => {
   const handleResetPassword = async () => {
     try {
       await sendPasswordResetEmail(auth, email); // Send the reset password email
-      Alert.alert('Email Sent', 'Check your email for password reset instructions.');
+      Alert.alert('Correu electronic enviat', 'Revisa el teu correu electronic.');
       navigation.navigate('Login'); // Navigate to the login screen
     } catch (error) {
-      Alert.alert('Error', error.message);
+      Alert.alert('Aquest correu electronic no estat registrat', error.message);
     }
   };
 
