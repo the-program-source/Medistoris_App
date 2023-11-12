@@ -17,7 +17,6 @@ import TrackPlayer, {
   usePlaybackState,
   useProgress,
 } from 'react-native-track-player';
-import Modal from 'react-native-modal';
 import SongPlayer from '../SongPlayer';
 
 

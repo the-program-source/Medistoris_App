@@ -72,7 +72,7 @@ const HomeScreen = ({ navigation }) => {
           }}
         >
           <Text style={{ fontSize: 13, fontWeight: 'bold', color: 'white', marginLeft: 30 }}>
-            Totes les cançons
+            Totes les cancons
           </Text>
         </TouchableOpacity>
 

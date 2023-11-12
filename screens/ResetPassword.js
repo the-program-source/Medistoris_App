@@ -3,10 +3,14 @@ import { View, Text, TextInput, StyleSheet, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Button from '../components/Button';
 import COLORS from '../constants/colors';
-import { sendPasswordResetEmail } from 'firebase/auth'; // Import the function for sending reset password email
+import { sendPasswordResetEmail } from 'firebase/auth';
 
 const ResetPassword = ({ navigation }) => {
   const [email, setEmail] = useState('');
+
+  ResetPassword.navigationOptions = {
+    headerTitle: null, // Configura el título como null para eliminar el texto
+  };
 
   const handleResetPassword = async () => {
     try {

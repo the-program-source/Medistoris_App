@@ -21,7 +21,7 @@ import {
   import SongPlayer from '../SongPlayer';
   
 
-  const HomeScreen = () => {
+  const Histories = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const playbackState = usePlaybackState();
     const progress = useProgress();
@@ -247,7 +247,7 @@ import {
     );
   };
   
-  export default HomeScreen;
+  export default Histories;
   
 
   

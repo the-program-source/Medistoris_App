@@ -21,7 +21,7 @@ import Modal from 'react-native-modal';
 import SongPlayer from '../SongPlayer';
 
 
-const HomeScreen = () => {
+const Llegendes = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const playbackState = usePlaybackState();
   const progress = useProgress();
@@ -247,6 +247,6 @@ const HomeScreen = () => {
   );
 };
 
-export default HomeScreen;
+export default Llegendes;
 
 //'#a34c0d', '#592804', '#241001', '#000000'

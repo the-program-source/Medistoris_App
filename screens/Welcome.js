@@ -7,11 +7,12 @@ import Button from '../components/Button';
 const Welcome = ({ navigation }) => {
 
     return (
-        <LinearGradient
+        <View
             style={{
-                flex: 1
+                flex: 1,
+                backgroundColor: '#FBFF80'
             }}
-            colors={[ '#FBFF80', '#83007F']}
+            
         >
             <View style={{ flex: 1 }}>
                 <View>
@@ -36,14 +37,14 @@ const Welcome = ({ navigation }) => {
                     <View style={{ marginVertical: 22 }}>
                         <Text style={{
                             fontSize: 23,
-                            color: COLORS.white,
+                            color: COLORS.black,
                             marginVertical: 4,
                             textAlign: "center"
                         }}>Tarranà Català Immersiva</Text>
                     </View>
 
                     <Button
-                        title="Unir-se"
+                        title="Registra't"
                         onPress={() => navigation.navigate("Politica")}
                         style={{
                             marginTop: 22,
@@ -58,14 +59,14 @@ const Welcome = ({ navigation }) => {
                     }}>
                         <Text style={{
                             fontSize: 16,
-                            color: COLORS.white
+                            color: COLORS.black
                         }}>Ets usuari?</Text>
                         <Pressable
                             onPress={() => navigation.navigate("Login")}
                         >
                             <Text style={{
                                 fontSize: 16,
-                                color: COLORS.white,
+                                color: COLORS.blue,
                                 fontWeight: "bold",
                                 marginLeft: 4
                             }}>Inicia Sesió</Text>
@@ -74,7 +75,7 @@ const Welcome = ({ navigation }) => {
                     </View>
                 </View>
             </View>
-        </LinearGradient>
+        </View>
     )
 }
 

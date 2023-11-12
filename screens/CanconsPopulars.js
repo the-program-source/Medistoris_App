@@ -15,10 +15,9 @@ import TrackPlayer, {
   usePlaybackState,
   useProgress,
 } from 'react-native-track-player';
-import Modal from 'react-native-modal';
 import SongPlayer from '../SongPlayer';
 
-const Dites = () => {
+const CanconsPopulars = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const playbackState = usePlaybackState();
   const progress = useProgress();
@@ -242,4 +241,4 @@ const Dites = () => {
   );
 };
 
-export default Dites;
+export default CanconsPopulars;
